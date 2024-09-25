@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'ARRRMB';
+	src: local('ARRRMB'), url('./ARRRMB.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_416">Text with this font applied</p> */
+.fontsforweb_fontid_416 {
+	font-family: 'ARRRMB' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
