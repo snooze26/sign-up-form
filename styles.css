@@ -28,3 +28,11 @@
   #root, #__next {
     isolation: isolate;
 }
+
+div#sideBar {
+    background: rgb(0 0 0 / .4)
+}
+
+img#logo {
+    max-height: 100px;
+}
