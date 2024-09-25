@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: "headerText";
+    src: url(fonts/ARRRMB.woff);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -10,6 +15,10 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
   
   img, picture, video, canvas, svg {
@@ -29,6 +38,10 @@
     isolation: isolate;
 }
 
+form{
+    width: 850px;
+}
+
 div#sideBar {
     background: rgb(0 0 0 / .4)
 }
@@ -36,3 +49,33 @@ div#sideBar {
 img#logo {
     max-height: 100px;
 }
+
+input{
+    appearance: none;
+}
+input:required{
+    border: 1px solid white;
+    background: orange;
+}
+
+fieldset{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset > div{
+    background-color: rgb(255 165 0 / .5)  ;
+}
+
+h1,
+legend{
+    font-family: "headerText";
+    font-size: 2em;
+}
+
+div#mainMessage{
+    width: 75ch;
+
+}
+

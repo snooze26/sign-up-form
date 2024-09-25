@@ -14,39 +14,40 @@
         <p id="logoText">Scary Things</p>
     </div>
 
-    <div id="Main message">
+    <div id="mainMessage">
         <p>Sign up now to receive exclusive deals, insider news, and all the ghoulish updates for our 
         Halloween Catalog! 👻 Stay ahead of the frightful fun—early access to the merchandise, spooky surprises,
         and more awaits! Fill out the table below and join the haunted festivities today!</p>
     </div>
 
+
     <div id="Form">
             <form action="fakeUrl.com" method="post" name="formContainer">
                 <fieldset>
                     <legend>Let the Spooky Savings awaken!</legend>
-                                    <div>
-                    <label for="firstName">First Name</label>
+                <div id="formField">
+                    <label for="firstName">First Name<span>*</span></label>
                     <input type="text" id="firstName" name="firstName" required>
                 </div>
-                <div>
-                    <label for="lastName">Last Name</label>
+                <div id="formField">
+                    <label for="lastName">Last Name<span>*</span></label>
                     <input type="text" id="lastName" name="lastName" required>
                 </div>
-                <div>
-                    <label for="email">Email</label>
+                <div id="formField">
+                    <label for="email">Email<span>*</span></label>
                     <input type="email" id="email" name="email" placeholder="example@email.com" required>
                 </div>
-                <div>
-                    <label for="phoneNumber">Phone Number</label>
+                <div id="formField">
+                    <label for="phone">Phone Number<span>*</span></label>
                     <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required>
                 </div>
-                <div>
-                    <label for="password">Password</label>
+                <div id="formField">
+                    <label for="password">Password<span>*</span></label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <div>
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="confirmPassword" id="confirmPassword" name="confirmPassword" required>
+                <div id="formField">
+                    <label for="confirmPassword">Confirm Password<span>*</span></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
                 </div>
                 <div>
                     <button type="submit">Create Account</button>
