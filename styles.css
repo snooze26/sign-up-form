@@ -18,6 +18,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: #fffffc;
+    color: white;
+
 
   }
   
@@ -38,9 +41,28 @@
     isolation: isolate;
 }
 
-form{
-    width: 850px;
+#Form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+
+form{
+    width: 80%;
+    max-width: 850%;
+}
+
+#formField{
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    text-align: center;
+}
+
 
 
 img#logo {
@@ -52,18 +74,17 @@ input{
 }
 input:required{
     border: 1px solid white;
-    background: orange;
+    background-color: #697565;
 }
 
 fieldset{
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 100%;
+    border: none;
 }
 
-fieldset > div{
-    background-color: rgb(255 165 0 / .5)  ;
-}
 
 h1,
 legend{
@@ -73,6 +94,7 @@ legend{
 
 div#mainMessage{
     width: 75ch;
+    text-align: center;
 
 }
 
@@ -83,19 +105,24 @@ div#mainMessage{
     min-width: 100%;
 }
 
-#maincontent{
+.maincontent{
+    display: flex;
+    background-color: #0d0d0d;
     flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 50px solid rgb(0 0 0 / .2);
 }
 
 #sideBar {
-    display: flex;
     background-image: url(pictures/backgroundImg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-style: hidden;
     width: 45%;
     height: 100vh;
-    align-content: center;
-    justify-content: center;
 }
 
