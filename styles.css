@@ -1,9 +1,8 @@
-
 @font-face {
     font-family: "headerText";
     src: url(fonts/ARRRMB.woff);
 }
-
+/* start of default styling */
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -12,7 +11,7 @@
     margin: 0;
   }
   
-  body {
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     display: flex;
@@ -20,90 +19,26 @@
     justify-content: center;
     background: #fffffc;
     color: white;
-
-
-  }
+}
   
-  img, picture, video, canvas, svg {
+img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
+}
 
-  input, button, textarea, select {
+input, button, textarea, select {
     font: inherit;
-  }
+}
   
-  p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
+}
+
   
-  #root, #__next {
+#root, #__next {
     isolation: isolate;
 }
-
-#Form{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-form{
-    width: 80%;
-    max-width: 850%;
-}
-
-#formField{
-    display: flex;
-    flex-direction: column;
-}
-
-legend{
-    text-align: center;
-}
-
-
-
-img#logo {
-    height: 100px;
-}
-
-input{
-    appearance: none;
-    border: 1px dotted white;
-    background-color: #3f413f;
-    color: white;
-}
-input:hover{
-    background: #646363;
-}
-
-input:invalid{
-    border: 1px solid rgb(134, 55, 2);
-}
-
-
-fieldset{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    width: 100%;
-    border: none;
-}
-
-
-h1,
-legend{
-    font-family: "headerText";
-    font-size: 2em;
-}
-
-div#mainMessage{
-    width: 75ch;
-    text-align: center;
-
-}
+/* end of default styling */
 
 .container{
     display: flex;
@@ -131,6 +66,63 @@ div#mainMessage{
     border-style: hidden;
     width: 45%;
     height: 100vh;
+}
+
+#mainMessage{
+    width: 75ch;
+    text-align: center;
+
+}
+
+form{
+    width: 80%;
+    max-width: 850%;
+}
+
+#Form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#formField{
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+legend{
+    font-family: "headerText";
+    font-size: 2em;
+}
+
+legend{
+    text-align: center;
+}
+
+input{
+    appearance: none;
+    border: 1px dotted white;
+    background-color: #3f413f;
+    color: white;
+}
+
+input:hover{
+    background: #646363;
+}
+
+input:invalid{
+    border: 1px solid rgb(134, 55, 2);
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 100%;
+    border: none;
 }
 
 .account{
