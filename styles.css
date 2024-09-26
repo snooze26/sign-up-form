@@ -42,12 +42,9 @@ form{
     width: 850px;
 }
 
-div#sideBar {
-    background: rgb(0 0 0 / .4)
-}
 
 img#logo {
-    max-height: 100px;
+    height: 100px;
 }
 
 input{
@@ -77,5 +74,28 @@ legend{
 div#mainMessage{
     width: 75ch;
 
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+    min-width: 100%;
+}
+
+#maincontent{
+    flex: 1;
+}
+
+#sideBar {
+    display: flex;
+    background-image: url(pictures/backgroundImg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
 }
 
