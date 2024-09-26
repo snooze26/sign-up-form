@@ -71,11 +71,18 @@ img#logo {
 
 input{
     appearance: none;
+    border: 1px dotted white;
+    background-color: #3f413f;
+    color: white;
 }
-input:required{
-    border: 1px solid white;
-    background-color: #697565;
+input:hover{
+    background: #646363;
 }
+
+input:invalid{
+    border: 1px solid rgb(134, 55, 2);
+}
+
 
 fieldset{
     display: grid;
@@ -126,3 +133,18 @@ div#mainMessage{
     height: 100vh;
 }
 
+.account{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 150px;
+    background: #3f413f;
+    color: white;
+}
+
+button:hover{
+    background: #0d0d0d;
+    color: white;
+}
